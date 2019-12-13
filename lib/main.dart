@@ -31,10 +31,24 @@ class MyApp extends StatelessWidget {
        home: CategoriesScreen(),
        initialRoute: '/',
        routes: {
+         // cara 1
          '/category-meals': (context) => CatergoryMealsScreen(),
-         MealDetailScreen.routeName: (context) => MealDetailScreen()
+         // cara 2
+        // MealDetailScreen.routeName: (context) => MealDetailScreen()
+       },
+       // cara ini digunakan jika route name tidak terdaftar, dan dipanggil di scren lain
+       // dengan onGenerateRoute akan di arahkan ke sample Categories Screen 
+      //  onGenerateRoute: (settings){
+      //    print(settings.arguments);
+      //    return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
+      //  },
+       // hampir sama dengan onGenerateRoute
+       onUnknownRoute: (settings){
+         print(settings.arguments);
+         return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
        },
      );
+
   }
 }
 
