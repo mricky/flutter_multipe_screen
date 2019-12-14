@@ -25,6 +25,7 @@ class CategoriesScreen extends StatelessWidget {
         crossAxisSpacing: 20,
         mainAxisSpacing: 20
       ),
-    ),); 
+    ),
+    ); 
   }
 }
