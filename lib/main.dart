@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
          // cara 1
          '/category-meals': (context) => CatergoryMealsScreen(),
          // cara 2
-        // MealDetailScreen.routeName: (context) => MealDetailScreen()
+         MealDetailScreen.routeName: (context) => MealDetailScreen()
        },
        
        // execute for any unregistered named route
