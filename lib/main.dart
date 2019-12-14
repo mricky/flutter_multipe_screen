@@ -3,6 +3,7 @@ import './screens/tabs_screen.dart';
 import './screens/category_meals_screen.dart';
 import './screens/categories_screen.dart';
 import './screens/meal_detail.dart';
+import './screens/filters_screen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -36,7 +37,8 @@ class MyApp extends StatelessWidget {
          // cara 1
          '/category-meals': (context) => CatergoryMealsScreen(),
          // cara 2
-         MealDetailScreen.routeName: (context) => MealDetailScreen()
+         MealDetailScreen.routeName: (context) => MealDetailScreen(),
+         FiltersScreen.routeName: (context) => FiltersScreen()
        },
        
        // execute for any unregistered named route
