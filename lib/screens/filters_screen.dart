@@ -9,7 +9,7 @@ class FiltersScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Your Filter'),
       ),
-     // drawer: MainDrawer(),
+      drawer: MainDrawer(),
       body: Center(
         child: Text('Filters'),
       ),
