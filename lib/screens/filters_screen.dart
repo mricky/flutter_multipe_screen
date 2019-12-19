@@ -23,7 +23,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
     _vegetarian = widget.currentFilters['vegetarian'];
     _vegan = widget.currentFilters['vegan'];
     _lacatoseFree = widget.currentFilters['lactose'];
-    
+
     super.initState();
   }
   
@@ -84,10 +84,10 @@ class _FiltersScreenState extends State<FiltersScreen> {
               _buildSwitchListTile(
                'Lactose-free',
                'Only include lactose-free meals.',
-                _lcatoseFree,
+                _lacatoseFree,
                 (newValue){
                   setState(() {
-                    _lcatoseFree = newValue;
+                    _lacatoseFree = newValue;
                   });
                 }
               ),
